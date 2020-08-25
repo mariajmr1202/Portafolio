@@ -1,0 +1,337 @@
+*
+{
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --morado-muy-oscuro: #17002D;
+    --morado-oscuro: #1A0033;
+    --morado-titulos: #5B00B3;
+    --lila: #ECE5F2;
+    --morado-blanco: #F8F6FB; 
+}
+
+.container
+{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;                    
+}
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+header
+{
+    background: var(--morado-muy-oscuro);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    /*Fijar cabecera*/
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index:99;
+}
+
+figure
+{
+    margin: 0;
+}
+
+ol, ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;      /* quita los estilos que vienen por defecto (cómo la numeración y viñetas)  */
+}
+
+header ol
+{
+    display: flex;
+}
+
+header a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px; 
+} 
+
+.menu a
+{
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.4s;
+    padding-bottom: 10px;
+}
+
+.menu a:hover
+{
+    border-bottom: 1px solid var(--lila);
+}
+
+.hero
+{
+    height: 300px;
+    background: var(--morado-oscuro);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.5;                       
+    letter-spacing: -.2px; 
+}
+
+h1 strong 
+{
+    color: var(--morado-titulos);
+}
+
+.hero-imageContainer
+{
+    border-radius: 150px;
+    overflow: hidden; 
+    width: 280px;
+    height: 280px;
+}
+.hero-image{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.portfolio
+{
+    background: var(--lila);
+    padding-bottom: 30px;
+}
+
+h2
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--morado-titulos);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+.project
+{
+    background: white;
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 5px 33px #888888;
+    height: 360px;
+}
+
+.project-title
+{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-tools, .project-date, .project-url
+{
+    margin: 10px 0;
+}
+
+.project-tools
+{
+    text-transform: uppercase;
+}
+
+.project-description
+{
+    font-size: 20px;
+}
+
+.project strong
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project-details
+{
+    width: 500px;
+}
+
+.project-imageContainer
+{
+    width: 500px;
+}
+
+.skill
+{
+    background: var(--morado-blanco);
+    height: 250px;
+}
+
+.skill-container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.course
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.course-section
+{
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden; 
+    background-color: var(--morado-oscuro);
+    width: 480px;
+    flex-shrink: 0;
+    box-shadow: 3px 5px 33px #888888;
+}
+
+.course-details
+{
+    background-color: white;
+    height: 170px;
+    margin: 20px 40px;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    z-index:0;
+
+}
+
+.course-imageContainer
+{
+    width: 480px;
+    height: 200px;
+    overflow: hidden; 
+}
+
+.course-image
+{
+    object-fit: cover;
+}
+
+.course-description
+{
+    text-align: left;
+}
+
+.course-url
+{
+    color: var(--morado-titulos);
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact
+{
+    margin-top: 20px;
+    background: var(--morado-titulos);
+    color: white;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email h3
+{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.social-link
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter
+{
+    background-image: url(../images/twitter.svg);
+}
+
+.social-link.github
+{
+    background-image: url(../images/github.svg);
+}
+
+.social-link.instagram
+{
+    background-image: url(../images/instagram.svg);
+}
+
+.form-email input
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url(../images/envelope.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button
+{
+    display: block;
+    background: transparent;
+    padding: 10px 0;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.footer
+{
+    color: white;
+    background-color: var(--morado-muy-oscuro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
